@@ -39,6 +39,7 @@ jobs:
           python GetLOTS.py
           
       - name: Manual Domain Whitelisting
+        run: |
           echo 'fastly.com' >> lots.csv
         
       - name: Commit the changes

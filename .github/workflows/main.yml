@@ -41,6 +41,7 @@ jobs:
       - name: Manual Domain Whitelisting
         run: |
           echo 'fastly.com' >> lots.csv
+          echo 'notion.com' >> lots.csv
         
       - name: Commit the changes
         uses: stefanzweifel/git-auto-commit-action@v5
